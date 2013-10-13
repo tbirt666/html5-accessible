@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Accessible HTML5 Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+    <header class="main_header clearfix" role="banner"><!-- header -->
+        <a href="#"><img class="header_logo" src="assets/images/le-logo-72.png" width="72" height="72" alt="Company Name"></a>
+        <h2>Company Name</h2>
+    </header><!-- end header -->
+    <nav id="main_nav" role="navigation"><!-- navigation -->
+      <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="templates.html">Templates</a><ul>
+              <li><a href="template-fullwidth.html">Full Width</a></li>
+              <li><a href="template-column-left.html">Two Column Left</a></li>
+              <li><a href="template-column-right.html">Two Column Right</a></li>
+              <li><a href="template-3column.html">Three Column</a></li>
+              </ul></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="main_content"><!-- end main content -->
+			<!-- left nav -->
+      <aside class="main_side_left">
+      	<section class="side_panel">
+          <h2>Section</h2>
+          <ul class="subnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Dropdown</a><ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </section>
+        
+        <section class="side_panel">
+          <h2>Related links</h2>
+            <ul class="subnav">
+              <li><a href="#">Related 1</a></li>
+              <li><a href="#">Related 2</a></li>
+              <li><a href="#">Related 3 </a></li>
+            </ul>
+        </section>
+      </aside><!-- end left nav -->
+
+      <!-- main contents -->
+      <div class="main_center_twocols">
+        <section>
+          <header>
+            <h1>About</h1>
+          </header>
+          <article>
+            <div>
+              <h2>About Us Video</h2>
+              <video controls>
+                <source src="video-file.mp4" type="video/mp4"/>
+                <track src="en.vtt" kind="subtitles" srclang="en" label="English p subtitles" default/>
+                <track src="en.ttml" kind="captions" srclang="en" label="English p captions" default/>
+              </video>
+            </div>
+          </article>
+        </section>
+   		</div>
+    </div><!-- end main content -->
+    <footer class="main_footer clearfix"><!-- footer -->
+      <ul>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      
+      <p>&copy; Copyright Company Name Ltd 2013</p>
+    </footer><!-- end footer -->
+  </div><!-- end wrapper -->
+</body>
+</html>

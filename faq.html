@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Accessible HTML5 Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+    <header class="main_header clearfix" role="banner"><!-- header -->
+        <a href="#"><img class="header_logo" src="assets/images/le-logo-72.png" width="72" height="72" alt="Company Name"></a>
+        <h2>Company Name</h2>
+    </header><!-- end header -->
+    <nav id="main_nav" role="navigation"><!-- navigation -->
+      <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="templates.html">Templates</a><ul>
+              <li><a href="template-fullwidth.html">Full Width</a></li>
+              <li><a href="template-column-left.html">Two Column Left</a></li>
+              <li><a href="template-column-right.html">Two Column Right</a></li>
+              <li><a href="template-3column.html">Three Column</a></li>
+              </ul></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="main_content">
+			<!-- left nav -->
+      <aside class="main_side_left">
+      	<section class="side_panel">
+          <h2>Section</h2>
+          <ul class="subnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Dropdown</a><ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </section>
+        
+        <section class="side_panel">
+          <h2>Related links</h2>
+            <ul class="subnav">
+              <li><a href="#">Related 1</a></li>
+              <li><a href="#">Related 2</a></li>
+              <li><a href="#">Related 3 </a></li>
+            </ul>
+        </section>
+      </aside><!-- end left nav -->
+      
+      <!-- main contents -->
+      <div class="main_center_twocols">
+        <!--<div class="breadcrumb">
+          <p>You are currently in: <a href="#">Home</a> &gt; <a href="#">Parent Page</a> &gt; <strong>This Page</strong></p>
+         
+        </div> -->
+        <h1>Page Title</h1>
+        <!-- article text here -->
+              <section>
+          <article>
+            <header>
+         <h1>FAQ</h1>
+        <h2>How to create ?</h2>
+          <ul>
+          <li><a href="#q1">Accessible Text</a></li>
+          <li><a href="#q2">Accessible Tables</a></li>
+          <li><a href="#q3">Accessible Links</a></li>
+          <li><a href="#q4">Accessible Images</a></li>
+          <li><a href="#q5">Accessible Titles</a></li>
+          </ul>
+          </header>
+        <h2 id="q1">Accessible Text</h2>
+          
+                  You should use <em>emphasized</em><cite>citation</cite> and instead of <strong>bold</strong> you should use <strong>strong</strong> 
+                 <p> <span lang="la">Carpe diem </span>(seize the day)</p> 
+                 <p>The HTML <i>lang</i> tag is applied with value 'la' for latin phrase</p>
+                <h4>Acronyms</h4>
+                <p>The <abbr title="World Wide Web Consortium">W3C</abbr> was founded in 1994.</p>
+              
+        <h2 id="q2">Accessible Table</h2>
+                    <h4>Table with Caption, Summary and Details</h4>
+      <table>
+        <caption>
+         <strong>Lorem Ipsum.</strong>
+         <details>
+          <summary>Help</summary>
+          <p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and </p>
+          </details>
+        </caption>
+        <thead>
+         <tr>
+          <th>Table header column 1</th>
+          <th>Table header column 2</th>
+          <th>Table header column 3</th>
+         </tr>
+        </thead>
+        <tfoot>
+         <tr>
+          <td>Table footer column 1</td>
+          <td>Table footer column 2</td>
+          <td>Table footer column 3</td>
+         </tr>
+        </tfoot>
+        <tbody>
+         <tr>
+          <td>Table data column 1</td>
+          <td>Table data column 2</td>
+          <td>Table data column 3</td>
+         </tr>
+        </tbody>
+      </table>
+      
+        <h2 id="q3">Accessible Links</h2>
+         <h4>Accessible Links</h4>
+         <p>Design and method has a software story on accessibility. <a title="see the big picture of accessibility at Design & Method" href="http://designandmethod.com">See the Big picture at Design and Method </a></p>
+         <h2 id="q4">Accessible Images</h2>
+         <h4>Accessible Image</h4>
+         <figure><img src="images/maingraphics.png" alt="Example screen shot" title="main graphics showing screenshot example"><figcaption>Image with caption.</figcaption></figure>
+      <h2 id="q5">Accessible Titles</h2>
+      
+            <p>   <em>Instead of </em> <del>How to make content Accessible</del> <em>use</em> Accessible content</p>
+            <p>    <em>Instead of </em> <del>How to make links  Accessible</del> <em>use</em> Accessible links</p>
+               <p> <em>Instead of </em> <del>How to make images  Accessible</del> <em>use</em> Accessible images</p>
+                <p><em>Instead of </em> <del>How to make titles  Accessible</del> <em>use</em> Accessible titles </p>
+          </article>
+         </section>
+      </div>  
+    </div> <!-- end main content -->
+    <footer class="main_footer clearfix"><!-- footer -->
+      <ul>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      
+      <p>&copy; Copyright Company Name Ltd 2013</p>
+    </footer><!-- end footer -->
+  </div><!-- end wrapper -->
+</body>
+</html>
